@@ -1,3 +1,5 @@
+![Logo](./images/logo.svg "HILSTER")
+
 # Dashboard
 
 The HILSTER Dashboard is an interactive analytics tool for test results during development.
@@ -13,6 +15,8 @@ as well as changes over time.
 
 Project requirements can be supplied to the Dashboard enabling users to see whether
 requirements are already covered by tests.
+
+![Dashboard](./images/dashboard.png "Dashboard")
 
 For more information read the see
 [full Dashboard documentation](https://docs.hilster.io/dashboard/latest/).
