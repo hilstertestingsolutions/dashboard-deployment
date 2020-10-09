@@ -23,8 +23,8 @@ covered by tests.
 
 For more information read the see
 [full Dashboard documentation](https://docs.hilster.io/dashboard/latest/) or checkout the
-[video](videos/dashboard_overview.mp4).
+[video](videos/dashboard_overview.mp4?raw=true).
 
 # Deployment
 
-See [Dashboard documentation](https://docs.hilster.io/dashboard/latest/deployment.html?raw=true).
+See [Dashboard documentation](https://docs.hilster.io/dashboard/latest/deployment.html).
