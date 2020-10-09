@@ -27,4 +27,4 @@ For more information read the see
 
 # Deployment
 
-See [Dashboard documentation](https://docs.hilster.io/dashboard/latest/deployment.html).
+See [Dashboard documentation](https://docs.hilster.io/dashboard/latest/deployment.html?raw=true).
