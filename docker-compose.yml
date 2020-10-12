@@ -28,6 +28,7 @@ services:
     restart: always
     environment:
       - ACTIVATION_KEY=AAAA-BBBB-CCCC-DDDD  # change me!
+      - DASHBOARD_SERVER=http://proxy:80
     volumes:
       - ./licenses/:/licenses/
       - ./dashboard/:/configuration/
