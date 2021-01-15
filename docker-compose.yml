@@ -27,7 +27,7 @@ services:
     image: hilster/dashboard:latest
     restart: always
     environment:
-      - ACTIVATION_KEY=AAAA-BBBB-CCCC-DDDD  # change me!
+      - ACTIVATION_KEY=OOKF-ZPNF-DPDB-NWJZ  # change me to use a commercial license!
       - DASHBOARD_SERVER=http://proxy:80
     volumes:
       - ./licenses/:/licenses/
