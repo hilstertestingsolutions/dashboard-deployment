@@ -29,6 +29,8 @@ services:
     environment:
       - ACTIVATION_KEY=OOKF-ZPNF-DPDB-NWJZ  # change me to use a commercial license!
       - DASHBOARD_SERVER=http://proxy:80
+      # - https_proxy=http://username:password@proxy.server:port  # use this for your proxy server
+      # - HLM_INSECURE=1  # use this if you are behind a TLS interception proxy to let hlm not verify certificates
     volumes:
       - ./licenses/:/licenses/
       - ./dashboard/:/configuration/
