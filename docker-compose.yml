@@ -7,8 +7,12 @@ services:
     restart: always
     ports:
       - "80:80"
+      # - "443:443"  # if TLS is enabled
     volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf  # if TLS is disabled
+      # - ./nginx/certificate.crt:/etc/nginx/certificates/certificate.crt  # if TLS is enabled
+      # - ./nginx/certificate.key:/etc/nginx/certificates/certificate.key  # if TLS is enabled
+      # - ./nginx/default_tls.conf:/etc/nginx/conf.d/default.conf  # if TLS is enabled
     depends_on:
       - mongodb
       - dashboard
