@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose exec mongodb mongodump
+docker compose exec mongodb mongodump
