@@ -29,6 +29,7 @@ services:
 
   dashboard:
     image: hilster/dashboard:latest
+    # image: hilster/dashboard:1.2.5  # use this line with your desired version to run a specific version
     restart: always
     environment:
       - ACTIVATION_KEY=OOKF-ZPNF-DPDB-NWJZ  # change me to use a commercial license!
