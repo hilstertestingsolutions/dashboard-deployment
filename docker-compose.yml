@@ -3,7 +3,7 @@ version: '3'
 services:
   proxy:
     container_name: proxy
-    image: nginx:1.19
+    image: nginx:1.31
     restart: always
     ports:
       - "80:80"
@@ -21,15 +21,27 @@ services:
       - dashboard:dashboard
 
   mongodb:
-    image: mongo:5
+    # ATTENTION: When upgrading from 5 to 6, 7 or 8: Only change one major version number at a time. So start 6, 7 and 8.
+    #            Or start with an empty database and import everything again. See docs for more details.
+    # image: mongo:5  # the old version
+    # image: mongo:6
+    # image: mongo:7
+    image: mongo:8
     restart: always
     volumes:
       - ./data/db/:/data/db/
       - ./data/dump/:/dump/
+    ulimits:
+      nofile:
+        soft: 64000
+        hard: 64000
+      nproc:
+        soft: 64000
+        hard: 64000
 
   dashboard:
-    image: hilster/dashboard:latest
-    # image: hilster/dashboard:1.2.5  # use this line with your desired version to run a specific version
+    # image: hilster/dashboard:latest
+    image: hilster/dashboard:1.2.6  # use this line with your desired version to run a specific version
     restart: always
     environment:
       - ACTIVATION_KEY=OOKF-ZPNF-DPDB-NWJZ  # change me to use a commercial license!
