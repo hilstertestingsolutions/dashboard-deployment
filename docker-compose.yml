@@ -23,7 +23,7 @@ services:
   mongodb:
     # ATTENTION: When upgrading from 5 to 6, 7 or 8: Only change one major version number at a time. So start 6, 7 and 8.
     #            Or start with an empty database and import everything again. See docs for more details.
-    # image: mongo:5  # the old version
+    # image: mongo:5 # the old version
     # image: mongo:6
     # image: mongo:7
     image: mongo:8
